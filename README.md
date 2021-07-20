@@ -66,7 +66,26 @@ It has following features:
 ![1eng](https://user-images.githubusercontent.com/66121918/126318751-1d82a0d0-d7ea-437d-8b32-186a27a47689.JPG)
 
 ### Version 0 Script (De)compilation
+1. Start the tool.
+2. Go to "0-Version Script".
+3. Choose the processing mode (per file or per folder).
+4. Choose the input and output files or folders.
+5. Choose the encoding (of both script and decompiled file). If you want to create script with different encoding, just decompile it with old encoding, change encoding of decompiled script (txt) and create a new script with new encoding.
+6. Run it! Soon it will be (de)compiled...
 
+![2eng](https://user-images.githubusercontent.com/66121918/126334134-ea4b75ab-987a-42c5-90af-e391358cda82.JPG)
+
+### Other Versions Script (De)compilation
+1. Start the tool.
+2. Go to "1+ Versions Scripts".
+3. Choose the decompilation mode (to file or to folder). This mode is also complitation mode: from file or from folder.
+4. Choose the script folder and base (name of script files without extension). You may want to click at "..." button at the right of "script name" field and choose the ".sd" script, and boyh name without extension and folder will be filled authomatically.
+5. Choose the decompiled txt script file or folder. Do note, even if you decompile it to one file, there will be some technical files starting "__" in the same folder.
+6. Choose the encoding (of both script and decompiled file). If you want to create script with different encoding, just decompile it with old encoding, change encoding of decompiled script (txt) and create a new script with new encoding.
+7. Choose the version via ComboBox vidget.
+8. Run it! Soon it will be (de)compiled... But, to be fair, even if commonly (de)compilation takes about 1 minute, compilation from multiple files (from a folder) takes several minutes.
+
+![3eng](https://user-images.githubusercontent.com/66121918/126335099-f4ad63f6-f7a1-462e-9797-b606815c272f.JPG)
 
 ## Russian
 
@@ -94,7 +113,26 @@ It has following features:
 ![1rus](https://user-images.githubusercontent.com/66121918/126319073-48f41471-5955-47f2-ba77-28dd122bd4e2.JPG)
 
 ### (Де)компиляция скриптов версии 0
+1. Запустите средство.
+2. Перейдите на вкладку "Скрипт версии 0".
+3. Выберите режим обработки (по файлу или по папке).
+4. Выберите входные и выходные файлы или папки.
+5. Выберите кодировку (что применяется как для компилированного скрипта, так и декомпилированного txt). Ежели вы хотите сменить кодировку скрипта, то сперва декомпилируйте скрипт со старой, затем измените кодировку полученного текстового файла и создайте скрипт с новой кодировкой.
+6. Запускайте! Вскоре нужное будет (де)компилировано...
 
+![2rus](https://user-images.githubusercontent.com/66121918/126334424-0bef5941-b941-4f2b-af96-4c38a85a43f7.JPG)
+
+### (Де)компиляция скриптов остальных версий
+1. Запустите средство.
+2. Перейдите на вкладку "Скрипты версий 1+".
+3. Выберите режим рекомпиляции (в файл или папку). Сей режим также относится и к компиляции: из файла иль из папки.
+4. Выберите папку и основу имени скрипта (имя скрипта без расширения). Может быть удобно кликнуть на кнопку "..." с правой части подраздела "имени скрипта" и выбрать скрипт ".sd", после чего папка и основа имени скрипта будет заполнены автоматически.
+5. Выберите файл или папку декомпилированного скрипта в текстовом формате. Заметьте, что, даже ежели вы декомпилируете скрипт в один файл, в той же директории появятся технические файлы, имена коих начинаются с "__".
+5. Выберите кодировку (что применяется как для компилированного скрипта, так и декомпилированного txt). Ежели вы хотите сменить кодировку скрипта, то сперва декомпилируйте скрипт со старой, затем измените кодировку полученного текстового файла и создайте скрипт с новой кодировкой.
+8. Посредством виджета ComboBox выберите версию.
+9. Запускайте! Вскоре нужное будет (де)компилировано... Хотя, справедливости ради, если обычно (де)компиляция выполняется примерно за минуту, то компиляция из множества файлов (из папки) может занять уже несколько минут.
+
+![3rus](https://user-images.githubusercontent.com/66121918/126336017-f499329a-9d4d-4faf-bfba-459bbe2cf7a7.JPG)
 
 # Line and Message Breaks Help / Помощь по организации переносов по строкам и сообщениям
 Sometimes there could be a very big problem: text may not fully get in textbox. But with this tool thou don't need to cut some part of text, no. Thou can use line and message breaks. Methods are below.
