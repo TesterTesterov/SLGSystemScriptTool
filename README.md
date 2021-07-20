@@ -9,6 +9,8 @@ It has following features:
 - Scripts version 0 module (separate module because version 0 scripts are too different from the rest).
 - Script older versions module.
 
+For data editing see [SLGSystemDataTool](https://github.com/TesterTesterov/SLGSystemDataTool).
+
 ### Tested with
 - [Shihen 69 \~Shin'en no Messiah\~](https://vndb.org/v1117)
 - [Sangoku Hime \~Ransei, Tenka Sanbun no Kei\~ Renewal](https://vndb.org/r37064)
@@ -28,6 +30,8 @@ It has following features:
 - Криптографический модуль (для (рас)шифровки и криптоатак).
 - Модуль для работы со скриптами версии 0 (отдельный модуль, понеже скрипты версии 0 слишком отличаются от остальных).
 - Модуль для работы со скриптами более старых версий.
+
+С работы с форматами данных движка используйте [SLGSystemDataTool](https://github.com/TesterTesterov/SLGSystemDataTool).
 
 ### Протестировано с
 - [Псалтырь 69: Мессия пустоты](https://vndb.org/v1117)
