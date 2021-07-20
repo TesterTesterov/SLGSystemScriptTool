@@ -89,7 +89,7 @@ For data editing see [SLGSystemDataTool](https://github.com/TesterTesterov/SLGSy
 7. Choose the version via ComboBox vidget.
 8. Run it! Soon it will be (de)compiled... But, to be fair, even if commonly (de)compilation takes about 1 minute, compilation from multiple files (from a folder) takes several minutes.
 
-![3eng](https://user-images.githubusercontent.com/66121918/126335099-f4ad63f6-f7a1-462e-9797-b606815c272f.JPG)
+
 
 ## Russian
 
@@ -136,7 +136,7 @@ For data editing see [SLGSystemDataTool](https://github.com/TesterTesterov/SLGSy
 8. Посредством виджета ComboBox выберите версию.
 9. Запускайте! Вскоре нужное будет (де)компилировано... Хотя, справедливости ради, если обычно (де)компиляция выполняется примерно за минуту, то компиляция из множества файлов (из папки) может занять уже несколько минут.
 
-![3rus](https://user-images.githubusercontent.com/66121918/126336017-f499329a-9d4d-4faf-bfba-459bbe2cf7a7.JPG)
+
 
 # Line and Message Breaks Help / Помощь по организации переносов по строкам и сообщениям
 Sometimes there could be a very big problem: text may not fully get in textbox. But with this tool thou don't need to cut some part of text, no. Thou can use line and message breaks. Methods are below.
