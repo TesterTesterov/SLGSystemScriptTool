@@ -45,3 +45,22 @@ It has following features:
 
 
 ## Russian
+
+
+
+# Some information about SLG System engine / Некоторая информация про движок SLG System
+## English
+
+SLG System Engine is not very popular, but also not very obsqure engine, used in Gesen 18 (may be not only whose) games. It's in fact some sort of modified Tenka Touitsu ADVANCE engine. There are a lot of good visual novels and jRPG's uses it, such as Sengoku Hime and Sankoku Hime series.
+
+Oldest versions of it, such as Shihen 69's version or version "0", does use just a simple script .sd. Older versions does use multicomponent script from a group of files, that differ depending of the game version. The main file of it is .sd, but you cannot simply edit only one this file, because it will break offset-links between files and so the game won't run correctly. You need to edit all files synchronically and reflect changes in one file in others.
+
+Since third version of the engine (or even the latest games of second version) commonly use DRM and the scripts and files of supplement structures encryption.
+
+## Русский
+
+SLG System является не слишком популярным, но и не слишком неизвестным движком, используемым в играх Gesen 18 и, вероятно, Unicorn-A. На самом деле является своего рода модификацией движка Тэнка то:ицу ADVANCE. На нём написано немало сдобный визуальных новелл и японских ролевых игр (jRPG), например серии Принцессы Сэнгоку и Принцессы Троецарствия.
+
+Версия "0" данного движка используют однофайловые скрипты .sd, более поздние -- многокомпонентные скрипты из ряда файлов, которые меняются зависимости от версий и число которых обычно составляет от 9 до 11, причём все файлы связаны. Главным файлом таких многокомпонентных скриптов является .sd, хотя работать только с одним сим файлом, не меняя другие в соответствии со сделанными изменениями, нельзя, так как связность между ними сломается и игра не будет работать корректно.
+
+Игры на движке, начиная с третьей версии (или даже последних игр второй версии) обычно содержат технические средства защиты цифровых прав, DRM, а также шифрование скриптов и файлов вспомогательных структур данных.
