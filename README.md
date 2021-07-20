@@ -39,7 +39,7 @@ It has following features:
 - [Принцессы Сэнгоку 5: Родословная правителя, потушившего пламя войны](https://vndb.org/v13636)
 - [Принцессы Сэнгоку 6: Пробуждение державы, блеск новой Луны](https://vndb.org/v16629)
 
-# Usage
+# Usage / Использование
 ## English
 
 
@@ -47,6 +47,143 @@ It has following features:
 ## Russian
 
 
+# Line and Message Breaks Help / Помощь по организации переносов по строкам и сообщениям
+Sometimes there could be a very big problem: text may not fully get in textbox. But with this tool thou don't need to cut some part of text, no. Thou can use line and message breaks. Methods are below.
+### For line breaks insert in the current message this.
+```
+\n
+```
+### For message breaks duplicate the message command and "WAIT_FOR_CLICK" (if existed). It's preferable to edit "postcommand args", but not mandatory. It has worked in my tests even without editing them.
+### Example below is from Sengoku Hime 4.
+Old code.
+```
+#1: ["MESSAGE", 159, 43]
+[
+    "*",
+    "**",
+    "？？？",
+    [
+        "GROUP",
+        [
+            "「追加ができたぞー♪　皆、どんどん食べてくれ」",
+            0,
+            0,
+            -4276546,
+            -1
+        ]
+    ]
+]
+#1: ["WAIT_FOR_CLICK", 159, 45]
+[]
+```
+New code.
+```
+#1: ["MESSAGE", 159, 43]
+[
+    "*",
+    "**",
+    "？？？",
+    [
+        "GROUP",
+        [
+            "「追加ができたぞー♪　皆、どんどん食べてくれ」",
+            0,
+            0,
+            -4276546,
+            -1
+        ]
+    ]
+]
+#1: ["WAIT_FOR_CLICK", 159, 44]
+[]
+#1: ["MESSAGE", 159, 45]
+[
+    "*",
+    "**",
+    "？？？",
+    [
+        "GROUP",
+        [
+            "「追加ができたぞー♪　皆、どんどん食べてくれ」",
+            0,
+            0,
+            -4276546,
+            -1
+        ]
+    ]
+]
+#1: ["WAIT_FOR_CLICK", 159, 46]
+[]
+```
+
+## На русском
+Иногда можно столкнуться с одной большой-пребольшой проблемой: текст может не полностью влезать в текстовое окно. Однако, с сим средством вам не нужно обрезать его, отнюдь. Вы можете организовывать переносы по строкам и сообщениям. Методы указаны ниже.
+### Для переносов по строкам добавьте в текущее сообщение следующее.
+```
+\n
+```
+### Для переносов по сообщениям продублируйте текущую команду сообщения и "WAIT_FOR_CLICK" (при наличии). Рекомендуется также изменить т.н. "посткомандные аргументы", но это не обязательно, так как в моих тестах работало и без изменений их.
+### Пример ниже представлен для Принцесс Сэнгоку 4.
+Старый код.
+```
+#1: ["MESSAGE", 159, 43]
+[
+    "*",
+    "**",
+    "？？？",
+    [
+        "GROUP",
+        [
+            "「追加ができたぞー♪　皆、どんどん食べてくれ」",
+            0,
+            0,
+            -4276546,
+            -1
+        ]
+    ]
+]
+#1: ["WAIT_FOR_CLICK", 159, 45]
+[]
+```
+Новый код.
+```
+#1: ["MESSAGE", 159, 43]
+[
+    "*",
+    "**",
+    "？？？",
+    [
+        "GROUP",
+        [
+            "「追加ができたぞー♪　皆、どんどん食べてくれ」",
+            0,
+            0,
+            -4276546,
+            -1
+        ]
+    ]
+]
+#1: ["WAIT_FOR_CLICK", 159, 44]
+[]
+#1: ["MESSAGE", 159, 45]
+[
+    "*",
+    "**",
+    "？？？",
+    [
+        "GROUP",
+        [
+            "「追加ができたぞー♪　皆、どんどん食べてくれ」",
+            0,
+            0,
+            -4276546,
+            -1
+        ]
+    ]
+]
+#1: ["WAIT_FOR_CLICK", 159, 46]
+[]
+```
 
 # Some information about SLG System engine / Некоторая информация про движок SLG System
 ## English
