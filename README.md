@@ -42,9 +42,35 @@ It has following features:
 # Usage / Использование
 ## English
 
+### Cryptoattack
+1. Start the tool.
+2. Go to "Crypto Module" and focus on right half of the screen.
+3. Choose the main.sd **(and only the main.sd!)** script.
+4. Choose the output text file (with the cryptoattack result).
+5. Choose the attack type. Almost all games are weak for "2 0 0 2 0", but an earlier games may be weak for "2 0 2 0 0". **There is only one possible type for each main.sd!**
+6. Choose the attack mode of operation -- find only one possible key (may not work depending on settings) or all.
+7. Choose the attack mode of attack. Earlier games (elder of version 2 and version 3) use second (i-(key>>16)&0xff), but version 4 games use first (i^(key&0xff)).
+8. Run it! **If you picked attack mode and type correctly, you'll likely get first correct key in 1 minute!** If you can't get any key in 5 minutes, just try other settings.
+![0eng](https://user-images.githubusercontent.com/66121918/126317326-cf0989f0-eda1-4ce0-af9d-67a753a7041a.JPG)
+
+### (En/de)cryption
 
 
 ## Russian
+
+### Криптоатаки
+1. Запустите средство.
+2. Перейдите во вкладку "Криптомодуль" и сосредоточьте взгляд на правой части экрана.
+3. Выберите скрипт main.sd **(обязательно скрипт именно с таким названием!)**
+4. Выберите выходной текстовый файл (для вывода результатов криптоатаки).
+5. Выберите тип атаки. Обычно все игры уязвимы пред "2 0 0 2 0", но ранние могут быть уязвимы лишь пред "2 0 2 0 0". **Для каждого main.sd есть лишь один корректный тип криптоатаки!**
+6. Выберите режим обработки атаки -- находить один возможный ключ (что может и не работать в зависимости от настроек) иль все.
+7. Выберите режим собственно атаки. В ранних играх (версии 3 и поздние 2-й версии) используйте второй (i-(key>>16)&0xff), но для тех, что на 4, первый -- (i^(key&0xff)).
+8. Запускайте! **Коль вы выбрали правильные режим и тип атаки, то скорее всего получите первый корректный ключ аж за минуту!** Коль не можете получить никакого ключа за 5 минут, просто попробуйте иные настройки.
+![0rus](https://user-images.githubusercontent.com/66121918/126317942-0f711f4e-a7d8-4848-aec2-14aaed99545e.JPG)
+
+### (Рас)шифрование
+
 
 
 # Line and Message Breaks Help / Помощь по организации переносов по строкам и сообщениям
