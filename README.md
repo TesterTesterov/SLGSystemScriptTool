@@ -44,7 +44,7 @@ It has following features:
 
 ### Cryptoattack
 1. Start the tool.
-2. Go to "Crypto Module" and focus on right half of the screen.
+2. Go to "Crypto Module" and focus on the right half of the screen.
 3. Choose the main.sd **(and only the main.sd!)** script.
 4. Choose the output text file (with the cryptoattack result).
 5. Choose the attack type. Almost all games are weak for "2 0 0 2 0", but an earlier games may be weak for "2 0 2 0 0". **There is only one possible type for each main.sd!**
@@ -55,6 +55,17 @@ It has following features:
 ![0eng](https://user-images.githubusercontent.com/66121918/126317326-cf0989f0-eda1-4ce0-af9d-67a753a7041a.JPG)
 
 ### (En/de)cryption
+1. Start the tool.
+2. Go to "Crypto Module" and focus on the left half of the screen.
+3. Choose the processing mode (per file or per folder).
+4. Choose the input and output files or folders.
+5. Choose the key. You can choose known key in the ComboBox vidjet, but also can write your own key **(in hex form!)**
+6. Choose the encryption mode. Earlier games (elder of version 2 and version 3) scripts use second (i-(key>>16)&0xff), but version 4 games use first (i^(key&0xff)). Almost all supplement data files use the first mode.
+7. Run it! Soon it will be (de/en)crypted...
+
+![1eng](https://user-images.githubusercontent.com/66121918/126318751-1d82a0d0-d7ea-437d-8b32-186a27a47689.JPG)
+
+### Version 0 Script (De)compilation
 
 
 ## Russian
@@ -72,7 +83,17 @@ It has following features:
 ![0rus](https://user-images.githubusercontent.com/66121918/126317942-0f711f4e-a7d8-4848-aec2-14aaed99545e.JPG)
 
 ### (Рас)шифрование
+1. Запустите средство.
+2. Перейдите на вкладку "Криптомодуль" и сосредоточьте взгляд на левой части экрана.
+3. Выберите режим обработки (по файлу или по папке).
+4. Выберите входные и выходные файлы или папки.
+5. Выберите ключ. Можно как выбрать уже известный ключ с помощью виджета ComboBox, так и написать свой **(в шестнадцатеричной форме!)**
+6. Выберите режим шифрования. В ранних играх (версии 3 и поздние 2-й версии) используйте второй (i-(key>>16)&0xff), но для тех, что на 4, первый -- (i^(key&0xff)). Почти все файлы вспомогательных структур данных используют первый режим.
+7. Запускайте! Вскоре нужное будет (рас)шифровано...
 
+![1rus](https://user-images.githubusercontent.com/66121918/126319073-48f41471-5955-47f2-ba77-28dd122bd4e2.JPG)
+
+### (Де)компиляция скриптов версии 0
 
 
 # Line and Message Breaks Help / Помощь по организации переносов по строкам и сообщениям
