@@ -8,11 +8,11 @@ if (sys.platform == 'win32'):
 
 
 executables = [cx_Freeze.Executable("main.py",
-                                    shortcutName="SLGSystemDataTool",
-                                    shortcutDir="SLGSystemDataTool")]
+                                    shortcut_name="SLGSystemDataTool",
+                                    shortcut_dir="SLGSystemDataTool")]
 
 cx_Freeze.setup(
-        name="Name",
+        name="SLGSystemScriptTool",
         version="1.0",
         description="Dual language GUI tool for (de)compiling and (de/en)crypting (with key finding) scripts of SLG "
                 "System engine.\nДвуязычное средство с графическим интерфейсом для (де)компилирования и (рас)шифровки "
