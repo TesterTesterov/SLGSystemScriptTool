@@ -141,7 +141,7 @@ For data editing see [SLGSystemDataTool](https://github.com/TesterTesterov/SLGSy
 # Line and Message Breaks Help / Помощь по организации переносов по строкам и сообщениям
 Sometimes there could be a very big problem: text may not fully get in textbox. But with this tool thou don't need to cut some part of text, no. Thou can use line and message breaks. Methods are below.
 ### FOR GAME (SCRIPT) VERSIONS 0, 1 AND 2
-### Append new line in "GROUP" block in the current message.
+### For line break append new line in "GROUP" block in the current message.
 Old code
 ```
 #1: ["MESSAGE", 159, 43]
@@ -169,15 +169,16 @@ New code
 ```
 
 ### FOR GAME (SCRIPT) VERSIONS 3 AND 4
-### For line breaks insert in the current message this.
+### For line break insert in the current message this.
 ```
 \n
 ```
-### For message breaks duplicate the message command and "WAIT_FOR_CLICK" (if existed). It's preferable to edit "postcommand args", but not mandatory. It has worked in my tests even without editing them.
+
 ### FOR GAME (SCRIPT) VERSIONS 0, 1 AND 2
-Just do the same as with line breaks.
+### For message breaks just do the same as with line breaks.
 
 ### FOR GAME (SCRIPT) VERSIONS 3 AND 4
+### For message breaks duplicate the message command and "WAIT_FOR_CLICK" (if existed). It's preferable to edit "postcommand args", but not mandatory. It has worked in my tests even without editing them.
 ### Example below is from Sengoku Hime 4.
 Old code.
 ```
