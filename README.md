@@ -140,11 +140,44 @@ For data editing see [SLGSystemDataTool](https://github.com/TesterTesterov/SLGSy
 
 # Line and Message Breaks Help / Помощь по организации переносов по строкам и сообщениям
 Sometimes there could be a very big problem: text may not fully get in textbox. But with this tool thou don't need to cut some part of text, no. Thou can use line and message breaks. Methods are below.
+### FOR GAME (SCRIPT) VERSIONS 0, 1 AND 2
+### Append new line in "GROUP" block in the current message.
+Old code
+```
+#1: ["MESSAGE", 159, 43]
+[
+    "*",
+    "**",
+    "？？？",
+    [
+        "GROUP"
+        "Help! Take this to the next line!"
+    ]
+```
+New code
+```
+#1: ["MESSAGE", 159, 43]
+[
+    "*",
+    "**",
+    "？？？",
+    [
+        "GROUP"
+        "Help!",
+        "Take this to the next line!"
+    ]
+```
+
+### FOR GAME (SCRIPT) VERSIONS 3 AND 4
 ### For line breaks insert in the current message this.
 ```
 \n
 ```
 ### For message breaks duplicate the message command and "WAIT_FOR_CLICK" (if existed). It's preferable to edit "postcommand args", but not mandatory. It has worked in my tests even without editing them.
+### FOR GAME (SCRIPT) VERSIONS 0, 1 AND 2
+Just do the same as with line breaks.
+
+### FOR GAME (SCRIPT) VERSIONS 3 AND 4
 ### Example below is from Sengoku Hime 4.
 Old code.
 ```
@@ -209,10 +242,45 @@ New code.
 
 ## На русском
 Иногда можно столкнуться с одной большой-пребольшой проблемой: текст может не полностью влезать в текстовое окно. Однако, с сим средством вам не нужно обрезать его, отнюдь. Вы можете организовывать переносы по строкам и сообщениям. Методы указаны ниже.
+
+### ДЛЯ ВЕРСИЙ СКРИПТА 0, 1 И 2.
+### Для переноса по строкам добавьте новую строку в блок "GROUP".
+Old code
+```
+#1: ["MESSAGE", 159, 43]
+[
+    "*",
+    "**",
+    "？？？",
+    [
+        "GROUP"
+        "Помогите! Перенесите сие на следующую строку!"
+    ]
+```
+New code
+```
+#1: ["MESSAGE", 159, 43]
+[
+    "*",
+    "**",
+    "？？？",
+    [
+        "GROUP"
+        "Помогите!",
+        "Перенесите сие на следующую строку!"
+    ]
+```
+
+### ДЛЯ ВЕРСИЙ СКРИПТА 3, 4.
 ### Для переносов по строкам добавьте в текущее сообщение следующее.
 ```
 \n
 ```
+
+### ДЛЯ ВЕРСИЙ СКРИПТА 0, 1 И 2.
+### Перенос по сообщениям делается так же, как и по строкам.
+
+### ДЛЯ ВЕРСИЙ СКРИПТА 3 И 4.
 ### Для переносов по сообщениям продублируйте текущую команду сообщения и "WAIT_FOR_CLICK" (при наличии). Рекомендуется также изменить т.н. "посткомандные аргументы", но это не обязательно, так как в моих тестах работало и без изменений их.
 ### Пример ниже представлен для Принцесс Сэнгоку 4.
 Старый код.
